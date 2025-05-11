@@ -1,0 +1,8 @@
+<h1>Apply for {{ job.title }} at {{ job.company }}</h1>
+<form method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <p>{{ form.name.label }} {{ form.name }}</p>
+    <p>{{ form.email.label }} {{ form.email }}</p>
+    <p>{{ form.resume.label }} {{ form.resume }}</p>
+    <p>{{ form.submit }}</p>
+</form>

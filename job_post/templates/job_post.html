@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post Job</title>
+</head>
+
+<body>
+    <h1>Post a New Job</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>{{ form.title.label }} {{ form.title }}</p>
+        <p>{{ form.company.label }} {{ form.company }}</p>
+        <p>{{ form.description.label }} {{ form.description }}</p>
+        <p>{{ form.salary.label }} {{ form.salary }}</p>
+        <p>{{ form.job_type.label }} {{ form.job_type }}</p>
+        <p>{{ form.submit }}</p>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Available Jobs</title>
+</head>
+
+<body>
+    <h1>Available Jobs</h1>
+    {% for job in jobs %}
+    <h2>{{ job.title }} - {{ job.company }}</h2>
+    <p>{{ job.description }}</p>
+    <p>Salary: {{ job.salary }}</p>
+    <p>Job Type: {{ job.job_type }}</p>
+    <a href="{{ url_for('apply', job_id=job.id) }}">Apply Now</a>
+    <hr>
+    {% endfor %}
+</body>
+
+</html>
